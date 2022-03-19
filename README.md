@@ -1,18 +1,11 @@
 <!---
 Full module name and description.
 -->
-# farm_contrib_template
-Template for farmOS contrib modules.
+# farm_myfarmkey
+Integrates farmOS with [cibolabs MyFarmKey](https://www.cibolabs.com.au/myfarmkey).
 
 This module is an add-on for the [farmOS](http://drupal.org/project/farm)
 distribution.
-
-This repository can be used as a template for starting new
-farmOS contrib modules. It provides the following:
-- Standardized README.md template (see comments and remove what you don't need!)
-- Example module structure.
-- Github action for automated tests:
-  - PHPCS and PHPUnit
 
 <!---
 Geting started.

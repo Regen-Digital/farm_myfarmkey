@@ -1,0 +1,5 @@
+name: farmOS MyFarmKey
+type: module
+description: Integrates farmOS with MyFarmKey.
+package: farmOS Contrib
+core_version_requirement: ^9
