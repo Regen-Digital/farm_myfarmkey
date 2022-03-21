@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_myfarmkey
+id: lot_number
+label: Lot number
+bundles:
+  - land
