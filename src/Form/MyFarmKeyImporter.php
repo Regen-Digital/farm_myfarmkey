@@ -183,10 +183,10 @@ class MyFarmKeyImporter extends FormBase {
         }
 
         // Build the note line.
-        $nice_name =  ucfirst(str_replace('_', ' ', $property_name));
+        $nice_name = ucfirst(str_replace('_', ' ', $property_name));
         $note_lines[] = "$nice_name: $property_value";
       }
-      $default_notes = join(PHP_EOL, $note_lines);
+      $default_notes = implode(PHP_EOL, $note_lines);
       $form['output']['assets'][$index]['notes'] = [
         '#type' => 'textarea',
         '#title' => $this->t('Info'),
@@ -269,4 +269,5 @@ class MyFarmKeyImporter extends FormBase {
       $this->messenger()->addMessage($this->t('Created land asset: <a href=":url">%asset_label</a>', [':url' => $asset_url, '%asset_label' => $new_asset->label()]));
     }
   }
+
 }
