@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_regen_digital
+id: myfarmkey_import
+label: MyFarmKey Import
+description: 'Displays asset geometries in layers by asset type.'
+library: 'farm_regen_digital/behavior_myfarmkey_import'
+settings: { }

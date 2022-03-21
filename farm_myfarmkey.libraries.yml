@@ -1,0 +1,6 @@
+behavior_myfarmkey_import:
+  js:
+    js/farmOS.map.behaviors.myfarmkey_import.js: { }
+  dependencies:
+    - farm_map/behavior_popup
+    - farm_map/farm_map

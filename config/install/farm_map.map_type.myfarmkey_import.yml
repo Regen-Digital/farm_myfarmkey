@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_regen_digital
+id: myfarmkey_import
+label: MyFarmKey Import
+description: 'The map displayed with the MyFarmKey Importer.'
+behaviors:
+  - myfarmkey_import
+options: { }
