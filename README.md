@@ -19,64 +19,28 @@ Document installation steps.
 
 Install as you would normally install a contributed drupal module.
 
-TODO: Are there good Dupal docs for this? Do we mention composer or?
-TODO: Link to releases.
-
-<!---
-Document any special configuration the module requires. For example:
-- API Keys
-- Additional settings options
-- External (client) configuration
--->
-### Configuration
-
 <!---
 Document features the module provides.
 -->
 ## Features
 
-<!---
-Document features related to different entity types. For example:
-- Assets, logs, taxonomies, quantity types, data streams
-  - Base fields (added to all bundles)
-  - Bundle fields (added to single bundles)
-- Quick Forms
-- Field modules
-- Special logic
-- Other special features as needed
--->
-### Assets
+### Importers
 
-Adds fields to all asset types:
-- `example_1` (string): An example field.
-- `example_2` (string): Another example field.
+This module provides an importer for the GeoJSON file included in the standard
+MyFarmKey report. Each property is imported into farmOS as a Property (land)
+asset using the `jurisdicational_id` as the name. The `plan_number` and
+`lot_number` are saved as ID tags on the asset. Additional metadata is saved
+in the asset notes and data field.
+
 
 <!---
 Document features related to a single bundle.
 -->
-#### Land assets
+### Land assets
 
-Adds a new `example` land type for land assets.
-
-<!---
-Document any quick forms provided by this module.
--->
-### Quick Forms
-
-<!---
-Document any field modules provided by this module.
--->
-### Field Modules
-
-<!---
-Document any logic provided by this module.
--->
-### Logic
-
-<!---
-Document any other features provided by this module.
--->
-### Other
+Adds two id tag types for land assets:
+- Plan number: The plan number specified by MyFarmKey.
+- Lot number: The lot number specified by MyFarmKey.
 
 <!---
 It might be nice to include a FAQ.
@@ -89,11 +53,11 @@ Include maintainers.
 ## Maintainers
 
 Current maintainers:
-- Full name (handle) - [profile](https://farmos.org)
+- Paul Weidner [@paul121](https://github.com/paul121)
 
 <!---
 Include sponsors.
 -->
 ## Sponsors
 This project has been sponsored by:
-- [Organization](https://farmos.org)
+- [Regen Digital](https://regenfarmersmutual.com/regendigital/)
