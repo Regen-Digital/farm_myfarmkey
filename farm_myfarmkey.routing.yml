@@ -1,0 +1,7 @@
+farm_myfarmkey.import.myfarmkey:
+  path: '/import/myfarmkey'
+  defaults:
+    _form: Drupal\farm_myfarmkey\Form\MyFarmKeyImporter
+    _title: 'MyFarmKey Importer'
+  requirements:
+    _permission: 'create land asset'

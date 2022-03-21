@@ -1,0 +1,4 @@
+farm_myfarmkey.import.myfarmkey:
+  title: MyFarmKey
+  parent: farm.import
+  route_name: farm_myfarmkey.import.myfarmkey
