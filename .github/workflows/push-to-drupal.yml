@@ -7,14 +7,10 @@ jobs:
   push:
     name: Push to drupalcode.org
     runs-on: ubuntu-latest
-    env:
-      DRUPAL_ACCESS_TOKEN: ${{ secrets.DRUPAL_ACCESS_TOKEN }}
-    if: env.DRUPAL_ACCESS_TOKEN != ''
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
       - name: Push to drupalcode.org.
-        run: git push --tags "https://access-token:${{ env.DRUPAL_ACCESS_TOKEN }}@git.drupalcode.org/project/farm_myfarmkey" 1.x
-
+        run: git push --tags "https://access-token:${{ secrets.DRUPAL_ACCESS_TOKEN }}@git.drupalcode.org/project/farm_myfarmkey" 1.x
