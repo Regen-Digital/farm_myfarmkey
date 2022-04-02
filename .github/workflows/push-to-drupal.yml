@@ -13,4 +13,4 @@ jobs:
         with:
           fetch-depth: 0
       - name: Push to drupalcode.org.
-        run: git push --tags "https://access-token:${{ secrets.DRUPAL_ACCESS_TOKEN }}@git.drupalcode.org/project/farm_myfarmkey" 1.x
+        run: git push --tags "https://access-token:${{ secrets.DRUPAL_ACCESS_TOKEN }}@git.drupalcode.org/project/farm_myfarmkey.git" 1.x
