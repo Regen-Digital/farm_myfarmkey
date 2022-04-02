@@ -5,7 +5,7 @@ on:
       - '1.x'
 jobs:
   push:
-    name: Push to drupalcode.org
+    name: Push
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
