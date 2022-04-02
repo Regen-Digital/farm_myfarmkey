@@ -13,3 +13,4 @@ The initial release of this module.
 
 ### Added
  - A GeoJSON importer compatible with MyFarmKey exports.
+ - Plan number and Lot number ID tag types for land assets.
