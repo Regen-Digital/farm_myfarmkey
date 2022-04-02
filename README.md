@@ -19,6 +19,10 @@ Document installation steps.
 
 Install as you would normally install a contributed drupal module.
 
+```
+composer require 'drupal/farm_myfarmkey:^1.0'
+```
+
 <!---
 Document features the module provides.
 -->
