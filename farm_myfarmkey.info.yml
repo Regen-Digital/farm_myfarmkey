@@ -2,7 +2,7 @@ name: farmOS MyFarmKey
 type: module
 description: Integrates farmOS with MyFarmKey.
 package: farmOS Contrib
-core_version_requirement: ^9
+core_version_requirement: ^9 || ^10
 dependencies:
   - farm_id_tag
   - farm_import
